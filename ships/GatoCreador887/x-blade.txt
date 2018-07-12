@@ -1,0 +1,125 @@
+return model =
+  name: 'X-Blade'
+  level: 6
+  model: 4
+  size: 2.3
+  specs:
+    shield:
+      capacity: [250,400]
+      reload: [7,9]
+    generator:
+      capacity: [150,230]
+      reload: [120,155]
+    ship:
+      mass: 240
+      speed: [55,70]
+      rotation: [40,55]
+      acceleration: [60,85]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-90,-75,-50,0,50,105,100]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,15,15,15,10,0]
+      height: [0,10,15,15,15,10,0]
+      texture: [63,1,1,10,2,17]
+      propeller: true
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -55
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-15,-5,5,15,30]
+        z: [0,0,0,0,0]
+      width: [0,7,10,7,5]
+      height: [0,10,12,9,5]
+      propeller: false
+      texture: 9
+    engines:
+      section_segments: 12
+      offset:
+        x: 40
+        y: 0
+        z: 10
+      position:
+        x: [-8,-5,0]
+        y: [70,105,100]
+        z: [0,0,0]
+      width: [9,10,0]
+      height: [9,10,0]
+      texture: [2,17]
+      propeller: true
+    cannon:
+      section_segments: 6
+      offset:
+        x: 0
+        y: -35
+        z: -7
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-40,-50,-20,0,20,50]
+        z: [0,0,0,0,0,0]
+      width: [0,7,10,10,10,0]
+      height: [0,7,10,10,10,0]
+      angle: 0
+      laser:
+        damage: [20,45]
+        rate: 2
+        type: 2
+        speed: [150,175]
+        number: 5
+        error: 0
+        recoil: 40
+      propeller: false
+      texture: [12,3]
+    connectors:
+      section_segments: 12
+      offset:
+        x: 40
+        y: -20
+        z: 10
+      position:
+        x: [0,0]
+        y: [-30,30]
+        z: [0,0]
+      width: [10,10]
+      height: [10,10]
+      texture: 1
+      angle: 90
+    connectors2:
+      section_segments: 12
+      offset:
+        x: 40
+        y: 65
+        z: 10
+      position:
+        x: [0,0]
+        y: [-30,30]
+        z: [0,0]
+      width: [10,10]
+      height: [10,10]
+      texture: 2
+      angle: 90
+    sides:
+      section_segments: 12
+      offset:
+        x: 80
+        y: 0
+        z: 10
+      position:
+        x: [0,0,0,-6,-25,-50,-60]
+        y: [-90,-75,-50,0,50,105,120]
+        z: [0,0,0,0,0,0,0]
+      width: [0,7,15,15,10,5,0]
+      height: [0,7,15,15,10,5,0]
+      angle: 20
+      texture: [63,11,1,10,2,2]
