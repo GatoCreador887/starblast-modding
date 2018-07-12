@@ -1,0 +1,81 @@
+return model =
+  name: 'Morphis'
+  level: 3
+  model: 4
+  size: 1.25
+  specs:
+    shield:
+      capacity: [125,175]
+      reload: [3,5]
+    generator:
+      capacity: [90,145]
+      reload: [35,50]
+    ship:
+      mass: 150
+      speed: [100,120]
+      rotation: [55,70]
+      acceleration: [70,85]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-90,-75,-50,0,50,105,90]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,15,20,20,10,0]
+      height: [0,10,15,25,25,20,0]
+      propeller: true
+      texture: [63,1,1,10,2,17]
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -30
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,10,30,60]
+        z: [0,0,0,0,0]
+      width: [0,7,10,7,3]
+      height: [0,18,25,18,5]
+      propeller: false
+      texture: 9
+    guns:
+      section_segments: 12
+      offset:
+        x: 50
+        y: -25
+        z: -5
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-70,-75,-50,0,50,105,120]
+        z: [0,0,0,0,0,0,0]
+      width: [0,10,12,15,17,12,0]
+      height: [0,10,12,15,17,12,0]
+      texture: [12,63,3,3,4,4]
+      laser:
+        damage: [6,11]
+        rate: 6.5
+        type: 1
+        speed: [150,175]
+        number: 1
+        error: 0
+  wings:
+    main:
+      length: [80,40]
+      width: [120,150,170]
+      angle: [-10,20]
+      position: [15,-5,-40]
+      doubleside: true
+      bump:
+        position: 30
+        size: 10
+      texture: [11,10]
+      offset:
+        x: 0
+        y: 0
+        z: 0
