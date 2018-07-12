@@ -1,0 +1,75 @@
+return model =
+  name: 'Cannon'
+  level: 5
+  model: 0
+  size: 2.4
+  specs:
+    shield:
+      capacity: [275,500]
+      reload: [4,9]
+    generator:
+      capacity: [75,90]
+      reload: [25,60]
+    ship:
+      mass: 120
+      speed: [50,70]
+      rotation: [20,35]
+      acceleration: [55,90]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 10
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-40,-75,-50,0,50,75,105,90]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [0,15,25,30,35,32,30,0]
+      height: [0,10,15,25,25,22,20,0]
+      propeller: true
+      texture: [4,11,1,10,1,12,17]
+      laser:
+        damage: [40,75]
+        rate: 1
+        type: 1
+        speed: [100,150]
+        number: 1
+        error: 0
+        recoil: 100
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -20
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,10,30,60]
+        z: [0,0,0,0,0]
+      width: [0,10,15,10,5]
+      height: [0,18,25,18,5]
+      propeller: false
+      texture: 9
+    side_lasers:
+      section_segments: 12
+      offset:
+        x: -40
+        y: 0
+        z: 0
+      position:
+        x: [8,8,0,0,0]
+        y: [0,-10,27,50,45]
+        z: [0,0,0,0,0]
+      width: [0,2,10,10,0]
+      height: [0,2,10,10,0]
+      propeller: true
+      texture: [3,63,12,17]
+      laser:
+        damage: [1.5,3.75]
+        rate: 3
+        type: 1
+        speed: [200,300]
+        number: 1
+        error: 0
