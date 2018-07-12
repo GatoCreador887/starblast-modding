@@ -1,0 +1,147 @@
+return model =
+  name: 'Kestrel'
+  level: 3
+  model: 2
+  size: 1.45
+  specs:
+    shield:
+      capacity: [155,210]
+      reload: [4,7]
+    generator:
+      capacity: [150,175]
+      reload: [60,80]
+    ship:
+      mass: 140
+      speed: [95,110]
+      rotation: [70,95]
+      acceleration: [85,110]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-90,-75,-50,0,50,105,100,90]
+        z: [-10,-10,-10,-10,0,0,0,0]
+      width: [0,10,15,25,25,15,13,0]
+      height: [0,10,15,25,20,15,13,0]
+      propeller: true
+      texture: [63,63,2,2,2,2,17]
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -30
+        z: 5
+      position:
+        x: [0,0,0,0,0]
+        y: [0,40,66,84,89]
+        z: [-10,-2,-1,1,1]
+      width: [13,20,20,13,0]
+      height: [15,20,20,13,0]
+      texture: [9]
+      propeller: false
+    sides:
+      section_segments: 12
+      offset:
+        x: 30
+        y: 0
+        z: -10
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-45,-45,-50,0,50,105,100,90]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,7,10,10,10,10,7,0]
+      height: [0,7,10,10,10,10,7,0]
+      propeller: true
+      texture: [17,2,63,2,2,2,17]
+    guns:
+      section_segments: 8
+      offset:
+        x: 45
+        y: -92
+        z: -15
+      position:
+        x: [0,0,0,0]
+        y: [5,0,23,97]
+        z: [0,0,0,0]
+      width: [0,5,5,4]
+      height: [0,5,5,4]
+      texture: [12,8,13]
+      propeller: false
+      laser:
+        damage: [7,11]
+        rate: 4.5
+        type: 1
+        speed: [185,210]
+        recoil: 0
+        number: 1
+        error: 0
+    guns2:
+      section_segments: 8
+      offset:
+        x: 55
+        y: -95
+        z: -15
+      position:
+        x: [0,0,0,0]
+        y: [-5,-10,13,97]
+        z: [0,0,0,0]
+      width: [0,5,5,4]
+      height: [0,5,5,4]
+      texture: [12,8,13]
+      propeller: false
+      laser:
+        damage: [8,12]
+        rate: 4.4
+        type: 1
+        speed: [182,207]
+        recoil: 0
+        number: 1
+        error: 0
+  wings:
+    main:
+      length: [20,50,30]
+      width: [80,80,50,40]
+      angle: [0,-25,-25]
+      position: [40,30,50,70]
+      doubleside: true
+      bump:
+        position: 30
+        size: 3
+      texture: [2,63,63]
+      offset:
+        x: 35
+        y: 10
+        z: -12
+    mainfin:
+      length: [20]
+      width: [30,15]
+      angle: [90]
+      position: [30,50]
+      doubleside: true
+      bump:
+        position: 30
+        size: 10
+      texture: 2
+      offset:
+        x: 0
+        y: 50
+        z: 20
+    fins:
+      length: [30]
+      width: [30,15]
+      angle: [80]
+      position: [40,50]
+      doubleside: true
+      bump:
+        position: 30
+        size: 10
+      texture: 63
+      offset:
+        x: 30
+        y: 40
+        z: 0
