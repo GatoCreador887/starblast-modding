@@ -1,0 +1,81 @@
+return model =
+  name: 'Dual-Strike'
+  level: 3
+  model: 3
+  size: 1.25
+  specs:
+    shield:
+      capacity: [130,185]
+      reload: [2.5,5]
+    generator:
+      capacity: [75,125]
+      reload: [20,35]
+    ship:
+      mass: 100
+      speed: [105,120]
+      rotation: [65,90]
+      acceleration: [80,105]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-120,-105,-80,-30,70,105,90]
+        z: [0,0,0,0,0,0,0]
+      width: [0,15,25,30,30,20,0]
+      height: [0,10,15,25,25,20,0]
+      propeller: true
+      texture: [63,1,1,10,12,17]
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -60
+        z: 17
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-10,10,30,60]
+        z: [-3,0,0,0,0]
+      width: [0,10,15,10,5]
+      height: [0,13,20,14,5]
+      propeller: false
+      texture: 9
+    guns:
+      section_segments: 12
+      offset:
+        x: 50
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-100,-105,-80,-30,70,105,90]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,7,10,10,5,0]
+      height: [0,5,7,10,10,5,0]
+      propeller: true
+      texture: [12,11,10,1,12,17]
+      laser:
+        damage: [2,3]
+        rate: 10
+        type: 1
+        speed: [150,240]
+        number: 1
+        error: 10
+  wings:
+    join:
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      length: [45]
+      width: [50,30]
+      angle: [0]
+      position: [0,0,0,50]
+      texture: 1
+      bump:
+        position: 10
+        size: 20
